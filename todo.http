@@ -1,0 +1,23 @@
+GET http://localhost:3000/todos/
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 12,
+  "todo": "Buy groceries",
+  "priority": "HIGH",
+  "status": "TO DO"
+}
+###
+
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{
+  "todo": "Some task 2"
+}
+###
+
+DELETE http://localhost:3000/todos/2
